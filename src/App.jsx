@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import VendorSignUp from './components/VendorSignUp';
 import EventDirectory from './components/EventDirectory';
 import EventDetails from './components/EventDetails';
@@ -262,14 +262,14 @@ function App() {
   );
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MarketplaceView />} />
         <Route path="/admin" element={<AdminView />} />
         {/* Fallback to Marketplace */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
