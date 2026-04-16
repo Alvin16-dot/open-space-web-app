@@ -26,7 +26,7 @@ export const mockEvents = [
     stallsRemaining: 15,
     stallPrice: 'GHS 200 / day',
     footTraffic: '5,000+ Students',
-    image: '/legon-market.png',
+    image: 'legon-market.png',
     description: 'The biggest hall week celebration on the Legon campus. An explosive outdoor market focusing on local food, drinks, and thrifted fashion tailoring specifically to the student republic.',
     inclusions: [
       '1x Standard Canopy (10x10ft)',
